@@ -11,14 +11,14 @@
 
 .logo {
   margin-left: 60px;
-  border-bottom: 2px rgb(40, 38, 75) solid;
+  border-bottom: 2px rgb(67, 155, 155) solid;
 }
 
 .link {
   text-decoration-line: none;
-  color: black;
+  color: rgb(67, 155, 155);
 }
 
 .link:hover {
-  color: rgb(83, 72, 72);
+  color: rgb(82, 185, 185);
 }

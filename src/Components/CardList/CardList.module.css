@@ -8,3 +8,11 @@
 .link {
   text-decoration: none;
 }
+
+.title {
+  width: 300px;
+}
+
+.table_head {
+  font-weight: 400;
+}

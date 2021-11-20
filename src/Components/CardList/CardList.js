@@ -16,17 +16,17 @@ function CardList(props) {
   return (
     <div className={style.wrapper}>
       <TableBody>
-        <TableRow>
-          <TableCell>Title</TableCell>
-          <TableCell>Vendor</TableCell>
-          <TableCell>Pack</TableCell>
-          <TableCell>Price</TableCell>
+        <TableRow >
+          <TableCell sx={{ fontWeight: 900, color: '#00838f' }}>Title</TableCell>
+          <TableCell sx={{ fontWeight: 900, color: '#00838f' }}>Vendor</TableCell>
+          <TableCell sx={{ fontWeight: 900, color: '#00838f' }}>Pack</TableCell>
+          <TableCell sx={{ fontWeight: 900, color: '#00838f' }}>Price</TableCell>
         </TableRow>
         {state.selected.map((row) => {
           return (
             <TableRow hover={true} key={row.id}>
               <Link to={`/catalog/${row.id}`} className={style.link}>
-                <TableCell>{row.title}</TableCell>
+                <TableCell className={style.title}>{row.title}</TableCell>
               </Link>
               <TableCell>{row.vendor}</TableCell>
               <TableCell>{row.pack}</TableCell>

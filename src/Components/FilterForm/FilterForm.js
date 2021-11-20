@@ -18,8 +18,13 @@ function FilterForm({ dispatch }) {
         marks={true}
         min={0}
         max={10000}
+        sx={{ fontWeight: 900, color: '#0097a7' }}
       />
-      <Button variant="outlined" onClick={() => dispatch({ type: 'select', payload: sliderValue })}>
+      <Button
+        variant="outlined"
+        onClick={() => dispatch({ type: 'select', payload: sliderValue })}
+        sx={{ fontWeight: 400, color: '#0097a7' }}
+      >
         Выбрать
       </Button>
     </div>
