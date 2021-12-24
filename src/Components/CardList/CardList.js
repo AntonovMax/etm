@@ -1,4 +1,4 @@
-import { TableBody, TableCell, TableRow, TablePagination } from "@mui/material";
+import { TableBody, TableCell, TableRow } from "@mui/material";
 import { Link } from 'react-router-dom'
 import { useContext, useState } from 'react'
 import MainContext from '../../Contexts/mainContext'
@@ -8,9 +8,9 @@ import FilterForm from "../FilterForm/FilterForm";
 
 function CardList(props) {
 
-  const [ state, dispatch ] = useContext(MainContext)
+  const [state, dispatch] = useContext(MainContext)
   const [page, setPage] = useState(0)
-  
+
   const count = [...state.selected].length
   // const totalCount = rows.lenght + 1
   return (
@@ -34,14 +34,8 @@ function CardList(props) {
             </TableRow>
           )
         })}
-        <TablePagination
-          count={count}
-          page={page}
-          onChangePage={() => setPage()}
-          rowsPerPage={5}
-        />
       </TableBody>
-      <FilterForm dispatch={dispatch}/>
+      <FilterForm dispatch={dispatch} />
     </div>
   );
 }
